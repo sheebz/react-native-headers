@@ -1,7 +1,10 @@
 # react-native-headers
 Simple HTML like header elements for react-native
 
-
+##Instalation
+```bash
+npm install react-native-headers --save
+```
 
 ##Use
 Reference node module, export variable components.
