@@ -1,7 +1,7 @@
 # react-native-headers
 Simple HTML like header elements for react-native
 
-##Instalation
+##Installation
 ```bash
 npm install react-native-headers --save
 ```
