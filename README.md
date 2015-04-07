@@ -9,7 +9,7 @@ npm install react-native-headers --save
 ##Use
 Reference node module, export variable components.
 ```javascript
-var {H1, H2, H3, H4, H5, H6} = require('../components/htmlElements');
+var {H1, H2, H3, H4, H5, H6} = require('react-native-headers');
 ```
 
 Now, just reference and use like you would with html
