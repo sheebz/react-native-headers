@@ -19,19 +19,13 @@
     "Elements",
     "Headers"
   ],
-  "author": {
-    "name": "Rob Schieber",
-    "email": "rob.schieber@gmail.com",
-    "url": "https://twitter.com/sheebz"
-  },
+  "author": "Rob Schieber <rob.schieber@gmail.com> (https://twitter.com/sheebz)",
   "license": "ISC",
   "private": false,
   "bugs": {
     "url": "https://github.com/sheebz/react-native-headers/issues"
   },
   "homepage": "https://github.com/sheebz/react-native-headers",
-  "readmeFilename": "README.md",
-  "_id": "react-native-headers@1.0.0",
   "_shasum": "51ed81c7fff1d0df05fb609193b1d6b5ebb1ae55",
   "_from": "react-native-headers@"
 }

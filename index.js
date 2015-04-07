@@ -1,7 +1,13 @@
 
 var React = require('react-native');
+var flattenStyle = require('flattenStyle');
 var {StyleSheet, Text} = React;
-var generatedStyles = {};
+var baseStyles = {};
+var merge = require('merge');
+
+var styles = StyleSheet.create({
+  base: { },
+});
 
 //based on Chrome's internal stylesheet
 //http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css
@@ -14,14 +20,18 @@ var emTable = {
   "H6" : .67
 };
 
+
+
 var createSimpleTag = function(tagName ){
-  generatedStyles[tagName] = {
+  baseStyles[tagName] = {
     fontSize : emTable[tagName] * (window.BASE_FONT_SIZE || 18),//standard base font size
     fontWeight : 'bold'
   };
   return React.createClass.call(undefined, {
       render: function() {
-        return <Text style={generatedStyles[tagName]}>{this.props.children}</Text>;
+        var style = flattenStyle([baseStyles[tagName], this.props.style]);
+
+        return <Text style={style} >{this.props.children}</Text>;
     }
   });
 };
@@ -33,7 +43,7 @@ var H1 = createSimpleTag(['H1']),
     H5 = createSimpleTag(['H5']),
     H6 = createSimpleTag(['H6']);
 
-StyleSheet.create(generatedStyles);
+StyleSheet.create(baseStyles);
 
 module.exports = {
   H1, H2, H3, H4, H5, H6
