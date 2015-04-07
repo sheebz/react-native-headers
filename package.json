@@ -1,35 +1,37 @@
 {
-    "name": "react-native-headers",
-    "version": "1.0.4",
-    "description": "generates rythmic header components (H1-H6). Sizes are based on base font size which can be adjusted. ",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-        "react-native": "^0.3.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sheebz/react-native-headers"
-    },
-    "keywords": [
-        "react-native", "HTML", "Elements", "Headers"
-    ],
-    "author": {
-        "name": "Rob Schieber",
-        "email": "rob.schieber@gmail.com",
-        "url": "https://twitter.com/sheebz"
-    },
-    "license": "ISC",
-    "private": false,
-    "bugs": {
-        "url": "https://github.com/sheebz/react-native-headers/issues"
-    },
-    "homepage": "https://github.com/sheebz/react-native-headers",
-
-    "readmeFilename": "README.md",
-    "_id": "react-native-headers@1.0.0",
-    "_shasum": "51ed81c7fff1d0df05fb609193b1d6b5ebb1ae55",
-    "_from": "react-native-headers@"
+  "name": "react-native-headers",
+  "version": "1.1.0",
+  "description": "generates rythmic header components (H1-H6). Sizes are based on base font size which can be adjusted. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react-native": "^0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheebz/react-native-headers"
+  },
+  "keywords": [
+    "react-native",
+    "HTML",
+    "Elements",
+    "Headers"
+  ],
+  "author": {
+    "name": "Rob Schieber",
+    "email": "rob.schieber@gmail.com",
+    "url": "https://twitter.com/sheebz"
+  },
+  "license": "ISC",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/sheebz/react-native-headers/issues"
+  },
+  "homepage": "https://github.com/sheebz/react-native-headers",
+  "readmeFilename": "README.md",
+  "_id": "react-native-headers@1.0.0",
+  "_shasum": "51ed81c7fff1d0df05fb609193b1d6b5ebb1ae55",
+  "_from": "react-native-headers@"
 }
