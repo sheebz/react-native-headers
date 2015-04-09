@@ -10,9 +10,7 @@ var flattenStyle = require('flattenStyle');
 var merge = require('merge');
 var baseStyles = {};
 
-var styles = StyleSheet.create({
-  base: { },
-});
+
 
 //based on Chrome's internal stylesheet
 //http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css
@@ -33,12 +31,19 @@ var createSimpleTag = function(tagName ){
     fontWeight : 'bold'
   };
   return React.createClass.call(undefined, {
-
+  viewConfig: {
+    uiViewClassName: 'UIView',
+    validAttributes: ReactIOSViewAttributes.UIView
+  },
     mixins: [NativeMethodsMixin],
       render: function() {
         var style = flattenStyle([baseStyles[tagName], this.props.style]);
 
-        return <Text style={style} >{this.props.children}</Text>;
+        var nativeProps = merge(this.props, {
+          style,
+        });
+
+        return <Text  {... nativeProps}  >{this.props.children}</Text>;
     }
   });
 };
