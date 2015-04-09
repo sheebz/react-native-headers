@@ -1,9 +1,14 @@
-
 var React = require('react-native');
+var {Stylesheet, Text} = React;
+var NativeModules = require('NativeModules');
+var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
+var StyleSheet = require('StyleSheet');
+var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
+var PropTypes = require('ReactPropTypes');
+var NativeMethodsMixin = require('NativeMethodsMixin');
 var flattenStyle = require('flattenStyle');
-var {StyleSheet, Text} = React;
-var baseStyles = {};
 var merge = require('merge');
+var baseStyles = {};
 
 var styles = StyleSheet.create({
   base: { },
@@ -28,6 +33,8 @@ var createSimpleTag = function(tagName ){
     fontWeight : 'bold'
   };
   return React.createClass.call(undefined, {
+
+    mixins: [NativeMethodsMixin],
       render: function() {
         var style = flattenStyle([baseStyles[tagName], this.props.style]);
 
