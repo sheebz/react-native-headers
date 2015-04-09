@@ -1,6 +1,6 @@
 {
   "name": "react-native-headers",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "generates rythmic header components (H1-H6). Sizes are based on base font size which can be adjusted. ",
   "main": "index.js",
   "scripts": {
